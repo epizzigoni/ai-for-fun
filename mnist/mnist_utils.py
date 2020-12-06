@@ -60,7 +60,7 @@ def print_accuracy(y_test, y_pred):
         print(f'Accuracy {num}: {round(this_acc * 100, 2)} %')
 
     acc = accuracy_score(y_test, y_pred)
-    print(f'\nTotal Accuracy: {acc * 100} %')
+    print(f'\nTotal Accuracy: {round(acc * 100, 2)} %')
 
 
 def plot_correct_and_wrong(X_test, y_test, y_pred, n_plot=8,
